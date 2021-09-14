@@ -1,4 +1,4 @@
-# Dict .me:  _Dictionary Web app_
+# Dictme:  _Dictionary Web app_
 
 
 
