@@ -66,7 +66,7 @@ All `users` and searched `words` are saved in the database. The user id is a for
 
 Pull requests are welcome!
 
-If you find any bugs or you want more information, feel free to contact me via [email](marwan.zouaid@gmail.com) or [create a new issue](https://github.com/merouanezouaid/dict.me/issues/new).
+If you find any bugs or you want more information, feel free to contact me via [email](marwan.zouaid@gmail.com) or [create a new issue](https://github.com/merouanezouaid/dictme/issues/new).
 
 ## Notes
 [1] At first my app was supporting many languages but the API developer decided to remove non english languages and [2] decided to start using Wiktionary as a source for Dictionary API. [About the issue..](https://github.com/meetDeveloper/freeDictionaryAPI/issues/102)
