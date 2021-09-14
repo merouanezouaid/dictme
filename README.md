@@ -53,7 +53,7 @@ world | en | 2021-08-19 09:46:15
 Flask routes check if the user is authenticated by using ```@login_required``` and python logic (except for homepage and Terms and Conditions page), and sessions confirm to the system that the user is logged in or registered successfully.
 
 #### Database
-All `users` and searched `words` are saved in the database. The user id is a foreign key in the `words` table to refer users to their searched words.
+All `users` and searched `words` are saved in the database. The `user_id` is a foreign key in the `words` table to refer users to their searched words.
 
 ## Ideas for future development
 
