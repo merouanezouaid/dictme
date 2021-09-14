@@ -71,3 +71,8 @@ If you find any bugs or you want more information, feel free to contact me via [
 ## Notes
 [1] At first my app was supporting many languages but the API developer decided to remove non english languages and [2] decided to start using Wiktionary as a source for Dictionary API. [About the issue..](https://github.com/meetDeveloper/freeDictionaryAPI/issues/102)
 
+
+## Acknowledgement
+
+Special thanks to @FILali1 for his amazing contribution and deployment fixes, I was having lots of problems on Heroku and SQL queries but everything now is fine thanks to your guidance, and your incredible job is very appreciated!! 💪
+
