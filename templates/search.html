@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+{% block title %}
+    Word
+{% endblock %}
+
+
+{% block main %}
+<br><br><br>
+  <h1><strong>Search for a word</strong></h1>
+
+<div class="container">
+<div class="row">
+    <div class="col-lg-12 card-margin">
+        <div class="card search-form">
+            <div class="card-body p-0">
+                <form id="search-form" action="/word" method="GET">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row no-gutters">
+                                <div class="col-lg-8 col-md-6 col-sm-12 p-0">
+                                    <input style="width: calc(100% - -5px); height: 0px;" type="text" placeholder="Search..." class="form-control" name="word" required />
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                                    <select class="form-control" id="exampleFormControlSelect1" name="language" required>
+                                  <option disabled selected value="">Language</option>
+                                  <option value="en">&#127468;&#127463; English</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-1 col-md-3 col-sm-12 p-0">
+                                  <button style="margin: 0; font-size: 27px" type="submit" class="btn btn-base">🔍</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<div>
+    <div>
+        <h1><strong>Quote of the day ✍</strong></h3>
+    </div>
+    <br>
+<a target="_blank" href="https://kwize.com/quote-of-the-day/"><img class="center" style="max-width: 300px;" src="https://kwize.com/pics/Quote-of-the-Day-2-0.jpg" alt="Quote of the Day"></a>
+</div>
+
+
+{% endblock %}
+
+
+
+
+<!-- quote of the day -->
+<!-- word of the day -->

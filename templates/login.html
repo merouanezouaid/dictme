@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+
+
+
+{% block main %}
+    <div class="main-block">
+      <h1>Welcome! 👋</h1>
+     <form action="/login" method="post">
+        <hr>
+        <label id="icon" for="name"><i class="fas fa-user"></i></label>
+            <input autocomplete="off" autofocus name="username" id="name" placeholder="Username" type="text" required/>
+        <label id="icon" for="name"><i class="fas fa-unlock-alt"></i></label>
+            <input name="password" placeholder="Password" type="password" required />
+        <div class="btn-block">
+            <hr>
+          <p><a href="/register">New User? Register now!</a></p>
+        <button type="submit">Log In</button>
+        </div>
+      </form>
+    </div>
+
+{% endblock %}
+
+<!-- https://www.w3docs.com/tools/editor/5789
+https://fonts.google.com/specimen/Poppins#standard-styles !-->

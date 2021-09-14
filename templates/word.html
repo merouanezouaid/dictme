@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+{% block title %}
+    Word
+{% endblock %}
+
+
+{% block main %}
+
+<div class="Card">
+    <br><br>
+    <h2>{{ word.lower() }}</h2>
+    <h3><i>{{ phonetic }} &nbsp </i>
+    <audio id="player" src="{{ audio }}"></audio>
+         <a onclick="document.getElementById('player').play()"><i class='fa fa-volume-up'></i></a>
+    </h3>
+    <p>{{ definition }}</p>
+</div>
+
+<hr style="margin-bottom: 0;">
+
+
+<h1>
+    <div class="goo">See more definitions on <a href="https://en.wikipedia.org/wiki/{{ word.lower() }}">Wiki.</a></div>
+</h1>
+
+<h1>
+    <div class="goo">Find synonyms <a href="https://www.thesaurus.com/browse/{{ word.lower() }}">here.</a></div>
+</h1>
+
+
+<h1 style="text-align: left;">
+    <div class="goo"><a href="/search">back</a></div>
+</h1>
+<!-- Filter: https://css-tricks.com/gooey-effect/ -->
+<svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+        <filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+            <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+        </filter>
+    </defs>
+</svg>
+
+
+{% endblock %}

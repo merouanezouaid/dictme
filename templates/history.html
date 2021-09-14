@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %}
+   History
+{% endblock %}
+
+{% block main %}
+
+         <h2>History of words</h2>
+         <h1 style="text-align: left;">
+    <div class="goo"><a href="/search">back</a></div>
+         </h1>
+         <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+        <filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+            <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+        </filter>
+    </defs>
+</svg><br>
+            <div>
+                <table id="table">
+                    <thead>
+                        <tr>
+                            <th>Word</th>
+                            <th>Language</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                       {% for i in searched %}
+                           <tr>
+                               <td> {{ i.0 }}</td>
+                               <td> {{ i.1 }}</td>
+                               <td> {{ i.2 }}</td>
+                           </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            <div>
+ <script> 	$('#editable').editableTableWidget(); </script>
+
+ {% endblock %}

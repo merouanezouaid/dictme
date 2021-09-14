@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+    <div class="main-block">
+      <h1>Create an account</h1>
+     <form action="/register" method="post">
+        <hr>
+        <label id="icon" for="name"><i class="fas fa-user"></i></label>
+            <input autocomplete="off" autofocus name="username" placeholder="Username" type="text" required />
+        <label id="icon" for="name"><i class="fas fa-unlock-alt"></i></label>
+            <input name="password" placeholder="Password" type="password" required />
+        <label id="icon" for="name"><i class="fas fa-unlock-alt"></i></label>
+            <input name="confirmation" placeholder="Confirm Password" type="password" required />
+        <div class="btn-block">
+
+          <p>By clicking Register, you agree on our <a href="/terms">Terms and conditions for Dict.me</a>.</p>
+        <button type="submit">Register</button>
+        </div>
+     </form>
+    </div>
+{% endblock %}
+
+
+

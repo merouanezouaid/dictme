@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block title %}
+    Word
+{% endblock %}
+
+
+{% block main %}
+
+<h1>Error {{ e }}</h1>
+
+<hr style="margin-bottom: 0;">
+<br>
+<h3 style="text-align: center;">Oops, something went wrong. You may be able to try again.</h3>
+<br>
+<h1 style="text-align: left;">
+    <div class="goo"><a href="/search">back</a></div>
+</h1>
+<!-- Filter: https://css-tricks.com/gooey-effect/ -->
+<svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+        <filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+            <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+        </filter>
+    </defs>
+</svg>
+
+
+{% endblock %}
