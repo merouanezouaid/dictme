@@ -2,7 +2,7 @@
 
 
 
-### The project is a web app that provides definitions of english words, as well as pronounciations, synonyms and other features.
+### The project is a web app that provides definitions of English words, as well as pronunciations, synonyms, and other features.
 
 - I made this project in order to expand my knowledge of Python (Flask) and to learn how APIs actually work by using [Free Dictionary API](https://dictionaryapi.dev/).
 
